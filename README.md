@@ -38,14 +38,11 @@ bank-customer-churn-prediction/
 │
 ├── README.md                     # Project documentation
 ├── requirements.txt              # Dependencies
-└── .gitignore                    # Git ignore file
-```
+
 
 ## Results
 
 The model evaluation showed that an optimized XGBoost model performed best:
-
-![Model Comparison](images/model_comparison.png)
 
 ### Key Metrics of Best Model (XGBoost with threshold = 0.4):
 - **Precision**: 59.8% (60% of predicted churners actually churned)
@@ -57,7 +54,7 @@ The model evaluation showed that an optimized XGBoost model performed best:
 
 The most important features for predicting churn were:
 
-![Feature Importance](images/feature_importance.png)
+![Feature Importance](images/XGBoost_feature_importance.png)
 
 ## Data Exploration
 
@@ -77,7 +74,7 @@ Correlation analysis revealed important relationships between features:
 
 The ROC curves show the performance trade-offs for different models:
 
-![ROC Curves](images/roc_curves.png)
+![ROC Curves](images/XGBoost_Optimized_roc_curve.png)
 
 ## Usage
 
@@ -155,7 +152,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-For questions or collaboration, please contact [Your Name](mailto:your.email@example.com).
+For questions or collaboration, please contact [Ali Akbar](aliokkii12@gmail.com).
 ```
 
 
