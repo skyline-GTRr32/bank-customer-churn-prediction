@@ -1,7 +1,6 @@
 
 # Bank Customer Churn Prediction
 
-![Churn Prediction Banner](images/churn_banner.png)
 
 A machine learning project to predict which bank customers are likely to leave (churn) using XGBoost and ensemble techniques.
 
