@@ -70,16 +70,12 @@ Correlation analysis revealed important relationships between features:
 
 ![Correlation Heatmap](images/correlation_heatmap.png)
 
-## Model Performance
+### Model Performance
 
 The ROC curves show the performance trade-offs for different models:
 
 ![ROC Curves](images/XGBoost_Optimized_roc_curve.png)
 
-### Model Performance Visualization
-
-#### ROC Curve
-![ROC Curve](images/XGBoost_Optimized_roc_curve.png)
 
 #### Confusion Matrix
 ![Confusion Matrix](images/XGBoost_Optimized_confusion_matrix.png)
