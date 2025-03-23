@@ -25,12 +25,12 @@ bank-customer-churn-prediction/
 │   └── best_churn_model.joblib
 │
 ├── images/                       # Images for documentation
-│   ├── churn_banner.png
 │   ├── class_distribution.png
 │   ├── correlation_heatmap.png
-│   ├── feature_importance.png
-│   ├── model_comparison.png
-│   └── roc_curves.png
+│   ├── XGBoost_feature_importance.png
+│   ├── XGBoost_Optimized_roc_curve.png
+│   └── XGBoost_Optimized_confusion_matrix.png
+│   ├── XGBoost_threshold_analysis.png 
 │
 ├── src/                          # Source code
 │   ├── bank_churn_predictor.py   # Main predictor class
