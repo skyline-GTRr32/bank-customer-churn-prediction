@@ -1,2 +1,7 @@
-bank_churn_predictor.py   # Main predictor class
-run_churn_model.py        # Script to run the pipeline
+### Main predictor class:
+bank_churn_predictor.py 
+
+### Script to run the pipeline
+run_churn_model.py
+
+
