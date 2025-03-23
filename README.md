@@ -76,6 +76,19 @@ The ROC curves show the performance trade-offs for different models:
 
 ![ROC Curves](images/XGBoost_Optimized_roc_curve.png)
 
+### Model Performance Visualization
+
+#### ROC Curve
+![ROC Curve](images/XGBoost_Optimized_roc_curve.png)
+
+#### Confusion Matrix
+![Confusion Matrix](images/XGBoost_Optimized_confusion_matrix.png)
+
+#### Threshold Analysis
+Finding the optimal threshold (0.4) improved model performance:
+![Threshold Analysis](images/XGBoost_threshold_analysis.png)
+
+
 ## Usage
 
 ### Running the Full Pipeline
