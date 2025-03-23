@@ -38,7 +38,7 @@ bank-customer-churn-prediction/
 │
 ├── README.md                     # Project documentation
 ├── requirements.txt              # Dependencies
-
+```
 
 ## Results
 
