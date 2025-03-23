@@ -24,6 +24,7 @@ The model evaluation showed that an optimized XGBoost model performed best:
 ## Data Exploration
 
 The dataset contained 20.37% churned customers, showing a class imbalance.
+![Class Distribution](images/class_distribution.png)
 
 ## Usage
 
