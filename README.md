@@ -1,4 +1,7 @@
+
 # Bank Customer Churn Prediction
+
+![Churn Prediction Banner](images/churn_banner.png)
 
 A machine learning project to predict which bank customers are likely to leave (churn) using XGBoost and ensemble techniques.
 
@@ -11,9 +14,39 @@ This project implements an end-to-end machine learning pipeline for bank custome
 - **Best Model**: XGBoost with threshold optimization (F1 Score: 0.628)
 - **Features**: Advanced feature engineering including financial ratios, engagement scores, and more
 
+## Project Structure
+
+```
+bank-customer-churn-prediction/
+│
+├── data/                         # Data files
+│   └── Bank Customer Churn Prediction.csv
+│
+├── models/                       # Saved model files
+│   └── best_churn_model.joblib
+│
+├── images/                       # Images for documentation
+│   ├── churn_banner.png
+│   ├── class_distribution.png
+│   ├── correlation_heatmap.png
+│   ├── feature_importance.png
+│   ├── model_comparison.png
+│   └── roc_curves.png
+│
+├── src/                          # Source code
+│   ├── bank_churn_predictor.py   # Main predictor class
+│   └── run_churn_model.py        # Script to run the pipeline
+│
+├── README.md                     # Project documentation
+├── requirements.txt              # Dependencies
+└── .gitignore                    # Git ignore file
+```
+
 ## Results
 
 The model evaluation showed that an optimized XGBoost model performed best:
+
+![Model Comparison](images/model_comparison.png)
 
 ### Key Metrics of Best Model (XGBoost with threshold = 0.4):
 - **Precision**: 59.8% (60% of predicted churners actually churned)
@@ -21,10 +54,31 @@ The model evaluation showed that an optimized XGBoost model performed best:
 - **F1 Score**: 62.8%
 - **ROC AUC**: 85.9%
 
+### Feature Importance
+
+The most important features for predicting churn were:
+
+![Feature Importance](images/feature_importance.png)
+
 ## Data Exploration
 
-The dataset contained 20.37% churned customers, showing a class imbalance.
+### Customer Distribution
+
+The dataset contained 20.37% churned customers, showing a class imbalance:
+
 ![Class Distribution](images/class_distribution.png)
+
+### Feature Correlations
+
+Correlation analysis revealed important relationships between features:
+
+![Correlation Heatmap](images/correlation_heatmap.png)
+
+## Model Performance
+
+The ROC curves show the performance trade-offs for different models:
+
+![ROC Curves](images/roc_curves.png)
 
 ## Usage
 
@@ -66,10 +120,10 @@ high_risk = new_customers[new_customers['churn_probability'] > 0.6]
 
 Based on the model insights, we recommend the following actions to reduce customer churn:
 
-1. Focus on customers with high balance but low activity
+1. Focus on customers with high balance but low activity - they may be looking for better opportunities elsewhere
 2. Proactively engage with customers who have multiple products but low usage
-3. Create targeted retention campaigns for specific demographic segments
-4. Implement an early warning system to identify potential churners
+3. Create targeted retention campaigns for specific demographic segments identified as high-risk
+4. Implement an early warning system to identify potential churners before they leave
 
 ## Requirements
 
@@ -98,4 +152,12 @@ pip install -r requirements.txt
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+
+For questions or collaboration, please contact [Your Name](mailto:your.email@example.com).
+```
+
+
+
